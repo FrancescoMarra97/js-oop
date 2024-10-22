@@ -24,7 +24,14 @@ class Veicolo {
         this.porte = porte
         this.carburante = carburante
     }
+    informazioni() {
+        return `l'auto è una ${this.marca}, fabbricata nel ${this.anno}, di colore ${this.colore} `
+    }
+
+
+
 }
 
 const auto = new Veicolo("fiat", 2019, "blue");
-console.log(auto);
+console.log(auto.informazioni());
+
